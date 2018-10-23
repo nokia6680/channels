@@ -1,0 +1,67 @@
+.form-item {
+  width: 100%;
+
+  margin-bottom: 12px;
+
+  font: {
+    family: $main-font;
+    size: 1.25em;
+    weight: 900;
+  }
+
+  color: $text-white;
+
+  &__label {
+    padding-left: 56px;
+  }
+
+  &__pic--nickelodeon {
+    width: 240px;
+    height: auto;
+  }
+
+  &__pic--nickelodeonhd {
+    width: 267px;
+    height: auto;
+  }
+
+  &__pic--nickjr {
+    width: 127px;
+    height: auto;
+  }
+
+  &__select {
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 5px solid #ffffff;
+
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    /*for WebKit*/
+   -webkit-appearance: none;
+   /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+
+    font: {
+      family: $main-font;
+      size: 1.5em;
+      weight: 900;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__select::-ms-expand {
+    display: none;
+  }
+}

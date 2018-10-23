@@ -1,264 +1,253 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nickelodeon | Где смотреть</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-	<div class="wrapper">
-		<!-- Шапка сайта -->
-		<header class="header">
-			<nav class="header__nav header-nav">
-        <!--Верхняя часть шапки-->
-        <div class="header-nav__upper">
-          <div class="header-nav__logo">
-            <a class="header-nav__link" href="index.html" target="_self">
-							<img class="header-nav__img" src="img/logo.svg" alt="Nickelodeon" />
-            </a>
-          </div>
-				</div>
-			</nav>
-		</header>
-		<!-- Основное содержание страницы -->
-		<main class="main">
-			<section class="main__intro main-intro">
-				<h1 class="main-intro__title">Где смотреть</h1>
-				<!--Форма выбора нужных параметров-->
-				<form class="main-intro__form main-form" method="post" action="#">
-					<ul class="main-form__list form-list">
-						<!--Поле с чекбоксами фильтра-->
-						<li class="form-list__item form-item form-item--first">
-							<input class="visually-hidden form-item__checkbox form-item__checkbox--nickelodeon" type="checkbox" name="nickelodeon" id="nickelodeon" />
-							<label class="form-item__label form-item__label--nickelodeon" for="nickelodeon">
-								<img class="form-item__pic form-item__pic--nickelodeon" src="img/nickelodeon.svg" alt="nickelodeon" />
-							</label>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nickelodeon | Где смотреть</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Шапка страницы -->
+			<header class="header">
+				<nav class="header__nav header-nav">
+	        <!--Верхняя часть шапки-->
+	        <div class="header-nav__upper">
+	          <div class="header-nav__logo">
+	            <a class="header-nav__link" href="index.html" target="_self">
+								<img class="header-nav__img" src="img/logo.svg" alt="Nickelodeon" />
+	            </a>
+	          </div>
+					</div>
+				</nav>
+			</header>
+			<!-- Основное содержание страницы -->
+			<main class="main">
+				<section class="main__intro main-intro">
+					<h1 class="main-intro__title">Где смотреть</h1>
+					<!--Форма выбора нужных параметров-->
+					<form class="main-intro__form main-form" method="post" action="#">
+						<ul class="main-form__list form-list">
+							<!--Поле с чекбоксами фильтра-->
+							<li class="form-list__item form-item form-item--first">
+								<input class="visually-hidden form-item__checkbox form-item__checkbox--nickelodeon" type="checkbox" name="nickelodeon" id="nickelodeon" />
+								<label class="form-item__label form-item__label--nickelodeon" for="nickelodeon">
+									<img class="form-item__pic form-item__pic--nickelodeon" src="img/nick.svg" alt="nickelodeon" />
+								</label>
+							</li>
+							<li class="form-list__item form-item form-item--second">
+								<input class="visually-hidden form-item__checkbox form-item__checkbox--nickelodeonhd" type="checkbox" name="nickelodeonhd" id="nickelodeonhd" />
+								<label class="form-item__label form-item__label--nickelodeonhd" for="nickelodeonhd">
+									<img class="form-item__pic form-item__pic--nickelodeonhd" src="img/nickhd.svg" alt="nickelodeonHD" />
+								</label>
+							</li>
+							<li class="form-list__item form-item form-item--third">
+								<input class="visually-hidden form-item__checkbox form-item__checkbox--nickjr" type="checkbox" name="nickjr" id="nickjr" />
+								<label class="form-item__label form-item__label--nickjr" for="nickjr">
+									<img class="form-item__pic form-item__pic--nickjr" src="img/nickjr.svg" alt="nickjr" />
+								</label>
+							</li>
+							<!--Селект выбора страны-->
+							<li class="form-list__item form-item form-item--select">
+								<select class="form-item__select" size="1" name="country">
+									<option class="form-item__option">Россия</option>
+									<option class="form-item__option">Россия</option>
+									<option class="form-item__option">Россия</option>
+									<option class="form-item__option">Россия</option>
+									<option class="form-item__option">Россия</option>
+									<option class="form-item__option">Россия</option>
+								</select>
+							</li>
+							<!--Поле ввода города для поиска-->
+							<li class="form-list__item form-item form-item--search">
+								<input class="form-item__input" type="text" name="city" id="name" />
+								<ul class="form-item__results city-results">
+									<li class="city-results__item" id="city-1">
+										<a class="city-results__link" href="#">Город 1</a>
+									</li>
+									<li class="city-results__item" id="city-2">
+										<a class="city-results__link" href="#">Город 2</a>
+									</li>
+									<li class="city-results__item" id="city-3">
+										<a class="city-results__link" href="#">Город 3</a>
+									</li>
+									<li class="city-results__item" id="city-4">
+										<a class="city-results__link" href="#">Город 4</a>
+									</li>
+									<li class="city-results__item" id="city-5">
+										<a class="city-results__link" href="#">Город 5</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</form>
+				</section>
+				<!--Секция слайдеров выбора источника просмотра-->
+				<section class="main__source main-source">
+					<h2 class="visually-hidden main-source__title">На чем планируется просмотр?</h2>
+					<!--Переключатель слайдеров, только для мобильной и планшетной версий-->
+					<ul class="nav-language__list language-list">
+						<li class="language-list__item">
+							<input class="visually-hidden language-list__input language-list__input--radio" type="radio" name="type" value="hometv" id="hometv" checked>
+							<label class="language-list__label language-list__label--hometv" for="hometv">Домашнее ТВ</label>
 						</li>
-						<li class="form-list__item form-item form-item--second">
-							<input class="visually-hidden form-item__checkbox form-item__checkbox--nickelodeonHD" type="checkbox" name="nickelodeonHD" id="nickelodeonHD" />
-							<label class="form-item__label form-item__label--nickelodeonHD" for="nickelodeon">
-								<img class="form-item__pic form-item__pic--nickelodeonHD" src="img/nickelodeonHD.svg" alt="nickelodeonHD" />
-							</label>
-						</li>
-						<li class="form-list__item form-item form-item--third">
-							<input class="visually-hidden form-item__checkbox form-item__checkbox--nickjr" type="checkbox" name="nickjr" id="nickjr" />
-							<label class="form-item__label form-item__label--nickjr" for="nickjr">
-								<img class="form-item__pic form-item__pic--nickjr" src="img/nickjr.svg" alt="nickjr" />
-							</label>
-						</li>
-						<!--Селект выбора страны-->
-						<li class="form-list__item form-item form-item--select">
-							<select class="form-item__select" size="1" name="country">
-								<option class="form-item__option">
-									<b class="form-item__country">Россия</b>
-								</option>
-								<option class="form-item__option">
-									<b class="form-item__country">Казахстан</b>
-								</option>
-								<option class="form-item__option">
-									<b class="form-item__country">Литва</b>
-								</option>
-								<option class="form-item__option">
-									<b class="form-item__country">Латвия</b>
-								</option>
-								<option class="form-item__option">
-									<b class="form-item__country">Эстония</b>
-								</option>
-							</select>
-						</li>
-						<!--Поле ввода города для поиска-->
-						<li class="form-list__item form-item form-item--search">
-							<input class="form-item__input" type="text" name="city" id="name" />
-							<ul class="form-item__results city-results">
-								<li class="city-results__item city-item" id="city-1">
-									<a class="city-item__link" href="#">Город 1</a>
-								</li>
-								<li class="city-results__item city-item" id="city-2">
-									<a class="city-item__link" href="#">Город 2</a>
-								</li>
-								<li class="city-results__item city-item" id="city-3">
-									<a class="city-item__link" href="#">Город 3</a>
-								</li>
-								<li class="city-results__item city-item" id="city-4">
-									<a class="city-item__link" href="#">Город 4</a>
-								</li>
-								<li class="city-results__item city-item" id="city-5">
-									<a class="city-item__link" href="#">Город 5</a>
-								</li>
-							</ul>
+						<li class="language-list__item">
+							<input class="visually-hidden language-list__input language-list__input--radio" type="radio" name="type" value="homepc" id="homepc">
+							<label class="language-list__label language-list__label--homepc" for="homepc">Компьютер</label>
 						</li>
 					</ul>
-				</form>
-			</section>
-			<!--Секция слайдеров выбора источника просмотра-->
-			<section class="main__source main-source">
-				<h2 class="visually-hidden main-source__title">На чем планируется просмотр?</h2>
-				<!--Переключатель слайдеров, только для мобильной и планшетной версий-->
-				<ul class="nav-language__list language-list">
-					<li class="language-list__item">
-						<input class="visually-hidden language-list__input language-list__input--radio" type="radio" name="type" value="hometv" id="hometv" checked>
-						<label class="language-list__label language-list__label--hometv" for="hometv">Домашнее ТВ</label>
+					<ul class="main-source__list source-list">
+						<!--Просмотр на домашнем тв-->
+						<li class="source-list__item source-item source-item--hometv">
+							<h3 class="source-item__title"></h3>
+							<div class="source-item__slider source-slider source-slider__first">
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-1" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-2" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-3" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-4" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-5" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-6" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-7" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-8" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-9" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-10" />
+									</a>
+								</div>
+							</div>
+							<div class="prev-1"></div>
+							<div class="next-1"></div>
+						</li>
+						<!--Просмотр на компьютере-->
+						<li class="source-list__item source-item source-item--pc">
+							<h3 class="source-item__title"></h3>
+							<div class="source-item__slider source-slider source-slider__first">
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-1" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-2" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-3" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-4" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-5" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-6" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-7" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-8" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-9" />
+									</a>
+								</div>
+								<div class="source-slider__channel">
+									<a class="source-slider__link" href="#" target="_blank">
+										<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-10" />
+									</a>
+								</div>
+							</div>
+							<div class="prev-2"></div>
+							<div class="next-2"></div>
+						</li>
+					</ul>
+				</section>
+			</main>
+			<!--Подвал страницы-->
+			<footer class="footer">
+				<!--Соцсети-->
+				<ul class="footer-links__social footer-social">
+					<li class="footer-social__item social-item social-item--vk">
+						<a class="social-item__link" href="#" target="_blank"><i class="fab fa-vk"></i></a>
 					</li>
-					<li class="language-list__item">
-						<input class="visually-hidden language-list__input language-list__input--radio" type="radio" name="type" value="homepc" id="homepc">
-						<label class="language-list__label language-list__label--homepc" for="homepc">Компьютер</label>
+					<li class="footer-social__item social-item social-item--ok">
+						<a class="social-item__link" href="#" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
+					</li>
+					<li class="footer-social__item social-item social-item--fb">
+						<a class="social-item__link" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="footer-social__item social-item social-item--in">
+						<a class="social-item__link" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="footer-social__item social-item social-item--yt">
+						<a class="social-item__link" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
 					</li>
 				</ul>
-				<ul class="main-source__list source-list">
-					<!--Просмотр на домашнем тв-->
-					<li class="source-list__item source-item source-item--hometv">
-						<h3 class="source-item__title"></h3>
-						<div class="source-item__slider source-slider source-slider__first">
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-1" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-2" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-3" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-4" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-5" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-6" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-7" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-8" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-9" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-10" />
-								</a>
-							</div>
-						</div>
-						<div class="prev-1"></div>
-						<div class="next-1"></div>
-					</li>
-					<!--Просмотр на компьютере-->
-					<li class="source-list__item source-item source-item--pc">
-						<h3 class="source-item__title"></h3>
-						<div class="source-item__slider source-slider source-slider__first">
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-1" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-2" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-3" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-4" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-5" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-6" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-7" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-8" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-9" />
-								</a>
-							</div>
-							<div class="source-slider__channel">
-								<a class="source-slider__link" href="#" target="_blank">
-									<img class="source-slider__logo" src="img/channel-1.svg" alt="Channel-10" />
-								</a>
-							</div>
-						</div>
-						<div class="prev-2"></div>
-						<div class="next-2"></div>
-					</li>
-				</ul>
-			</section>
-		</main>
-
-		<footer class="footer">
-			<!--Соцсети-->
-			<ul class="footer-links__social footer-social">
-				<li class="footer-social__item social-item social-item--vk">
-					<a class="social-item__link" href="#" target="_blank"><i class="fab fa-vk"></i></a>
-				</li>
-				<li class="footer-social__item social-item social-item--ok">
-					<a class="social-item__link" href="#" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
-				</li>
-				<li class="footer-social__item social-item social-item--fb">
-					<a class="social-item__link" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-				</li>
-				<li class="footer-social__item social-item social-item--in">
-					<a class="social-item__link" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-				</li>
-				<li class="footer-social__item social-item social-item--yt">
-					<a class="social-item__link" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-				</li>
-			</ul>
-		</footer>
-	</div>
-	<script src="../js/script.js"></script>
-</body>
-
+			</footer>
+		</div>
+		<script src="../js/script.js"></script>
+	</body>
 </html>
