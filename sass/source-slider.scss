@@ -6,12 +6,15 @@
   width: 370px;
 
   flex-wrap: nowrap;
-  padding-left: 6px;
 
   &__channel {
     min-width: 112px;
     max-width: 112px;
     height: 112px;
+
+    &:first-of-type {
+      margin-left: 6px;
+    }
 
     &:nth-of-type(3n) {
       margin-right: 0;
@@ -26,13 +29,6 @@
 
   .slick-disabled {
     opacity: 0.5 !important;
-  }
-
-  .slick-slide {
-    min-width: 112px;
-    max-width: 112px;
-
-    margin-right: 12px;
   }
 
   .prev-2 {
