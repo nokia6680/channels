@@ -25,3 +25,15 @@
     line-height: 1;
   }
 }
+
+@media (min-width: $tablets) {
+  .footer {
+    height: 24px;
+
+    &__copyright {
+      font: {
+        size: 0.625em;
+      }
+    }
+  }
+}
