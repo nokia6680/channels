@@ -15,3 +15,12 @@
     height: 100%;
   }
 }
+
+@media (min-width: $tablets) {
+  .header-nav {
+    &__logo {
+      width: 301px;
+      height: 43px;
+    }
+  }
+}

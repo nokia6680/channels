@@ -129,3 +129,64 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .source-slider {
+    width: 537px;
+
+    &__channel {
+      min-width: 163px;
+      max-width: 163px;
+      height: 164px;
+
+      &:first-of-type {
+        margin-left: 6px;
+      }
+    }
+
+    .prev-2 {
+      top: 24%;
+      left: -7.5%;
+
+      background-size: 38px 59px;
+
+      width: 38px;
+      height: 59px;
+    }
+
+    .next-2 {
+      top: 24%;
+      right: -7.5%;
+
+      background-size: 38px 59px;
+
+      width: 38px;
+      height: 59px;
+
+      cursor: pointer;
+      outline: none;
+    }
+
+    .slick-dots {
+      padding: 28px 0 28px 0;
+      button {
+        width: 21px;
+        height: 21px;
+      }
+
+      li {
+        margin: 0 0.5rem;
+      }
+
+      li.slick-active button {
+        width: 21px;
+        height: 21px;
+
+        &::before {
+          width: 39px;
+          height: 39px;
+        }
+      }
+    }
+  }
+}

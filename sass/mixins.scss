@@ -12,9 +12,9 @@
   }
   @media (min-width: $tablets) {
     width: auto;
-    max-width: 100%;
+    max-width: 650px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 34px;
   }
   @media (min-width: $laptop) {
     width: auto;
@@ -53,6 +53,10 @@
   padding-left: 38px;
 
   position: relative;
+
+  @media (min-width: $tablets) {
+    padding-left: 54px;
+  }
 }
 
 @mixin checkbox-custom {
@@ -67,6 +71,11 @@
   border: 3px solid #ffffff;
 
   background-color: transparent;
+
+  @media (min-width: $tablets) {
+    width: 54px;
+    height: 54px;
+  }
 }
 
 @mixin checkbox-checked {
@@ -81,6 +90,16 @@
   height: 33px;
   background-image: url('../img/tick.svg');
   background-size: 33px 33px;
+
+  @media (min-width: $tablets) {
+    width: 39px;
+    height: 39px;
+
+    top: 7px;
+    left: 8px;
+
+    background-size: 39px 39px;
+  }
 }
 
 

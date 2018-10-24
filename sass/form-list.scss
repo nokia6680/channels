@@ -14,3 +14,11 @@
   padding-right: 38px;
   padding-top: 10px;
 }
+
+@media (min-width: $tablets) {
+  .form-list {
+    padding-top: 15px;
+    padding-left: 32px;
+    padding-right: 55px;
+  }
+}

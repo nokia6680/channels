@@ -1,8 +1,16 @@
 .main {
-  @include container;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  width: 450px;
+}
+
+@media (min-width: $tablets) {
+  .main {
+    padding-top: 32px;
+
+    width: 650px;
+  }
 }

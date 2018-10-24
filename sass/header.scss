@@ -5,3 +5,11 @@
 
   background-color: $header-bg;
 }
+
+
+@media (min-width: $tablets) {
+  .header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}

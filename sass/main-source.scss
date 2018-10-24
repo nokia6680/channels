@@ -81,3 +81,32 @@
     transition: 0.3s ease all;
   }
 }
+
+@media (min-width: $tablets) {
+  .main-source {
+    padding-top: 30px;
+
+    .button-cover {
+      width: 108px;
+      height: 45px;
+
+      border-radius: 22px;
+
+      margin-left: 12px;
+      margin-right: 10px;
+    }
+
+    .button {
+      height: 36px;
+    }
+
+    #button-1 .knobs:before {
+      width: 36px;
+      height: 36px;
+    }
+
+    #button-1 .checkbox:checked + .knobs:before {
+      left: 64px;
+    }
+  }
+}

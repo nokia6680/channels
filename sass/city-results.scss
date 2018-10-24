@@ -6,12 +6,10 @@
   border: 5px solid #fff;
   border-top: none;
 
-  width: 100%;
+  width: 392px;
   height: 205px;
 
   overflow-y: scroll;
-
-  position: absolute;
 
   display: flex;
   flex-direction: column;
@@ -64,5 +62,27 @@
 
     cursor: pointer;
     outline: none;
+  }
+}
+
+@media (min-width: $tablets) {
+  .city-results {
+    width: 563px;
+    height: 304px;
+
+    &::-webkit-scrollbar {
+      width: 26px;
+    }
+
+    &__item {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &__link {
+      font: {
+        size: 1.875em;
+      }
+    }
   }
 }

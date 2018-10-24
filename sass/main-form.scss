@@ -8,3 +8,9 @@
 
   background-color: $form-bg;
 }
+
+@media (min-width: $tablets) {
+  .main-form {
+    padding-bottom: 7px;
+  }
+}

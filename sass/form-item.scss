@@ -83,8 +83,15 @@
   }
 
   &__city {
-    position: relative;
+    position: absolute;
     display: none;
+
+    top: 53px;
+    left: 0;
+
+    width: 392px;
+
+    z-index: 1000;
 
     &::after {
       position: absolute;
@@ -348,4 +355,165 @@
     right: 0;
     z-index: 0;
   }
+}
+
+@media (min-width: $tablets) {
+  .form-item {
+    margin-bottom: 22px;
+
+    font: {
+      family: $main-font;
+      size: 1.25em;
+      weight: 900;
+    }
+
+    &--first,
+    &--second,
+    &--third {
+      margin-bottom: 25px;
+    }
+
+
+    /*Спаны с логотипами каналов*/
+    &__span {
+      margin-left: 25px;
+    }
+
+    &__span--nick {
+      width: 347px;
+      height: 49px;
+
+      background-size: 347px 49px;
+    }
+
+    &__span--nickhd {
+      width: 386px;
+      height: 49px;
+
+      background-size: 386px 49px;
+    }
+
+    &__span--nickjr {
+      width: 184px;
+      height: 49px;
+
+      background-size: 184px 49px;
+    }
+
+    /* Инпут поиска города */
+    &__city {
+      top: 68px;
+
+      width: 563px;
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 5px;
+        height: 304px;
+
+        top: 0;
+        right: 32px;
+
+        background-color: #fff;
+      }
+    }
+
+    &__input {
+      padding-left: 10px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+
+      padding-right: 60px;
+
+      font: {
+        size: 1.875em;
+      }
+    }
+
+    &__btn {
+      position: absolute;
+
+      top: 7px;
+      right: 5px;
+
+      width: 60px;
+      height: 60px;
+    }
+
+    .fa-search {
+      position: absolute;
+      content: '\f002';
+
+      width: 48px;
+      height: 48px;
+
+      font-size: 2em;
+
+      color: $text-white;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    .select {
+      width: 563px;
+      height: 69px;
+
+      padding-top: 10px;
+      padding-bottom: 7px;
+
+      font: {
+        size: 1.875em;
+      }
+    }
+
+    .select:before {
+      background-size: 44px 32px;
+
+      width: 62px;
+      height: 62px;
+
+      top: -1px;
+      right: -1px;
+    }
+
+    /* */
+
+    .select input[name="list"]:not(:checked) ~ #text {
+      padding-left: 10px;
+    }
+
+    /* */
+
+    .select input[name="list"]:checked ~ #text {
+      padding-left: 10px;
+    }
+
+    .items {
+      width: 563px;
+    }
+
+    #select:not(:checked) ~ .items {
+      height: 69px;
+    }
+
+    .items label {
+      padding-left: 10px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+
+    #select:checked ~ .items {
+      padding-top: 53px;
+    }
+
+    .items input:checked + label {
+      padding-left: 15px;
+    }
+  }
+
 }

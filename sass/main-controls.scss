@@ -34,3 +34,19 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .main-controls {
+    justify-content: flex-start;
+
+    padding-left: 45px;
+
+    margin-bottom: 31px;
+
+    &__text {
+      font: {
+        size: 1.625em;
+      }
+    }
+  }
+}
