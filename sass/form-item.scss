@@ -2,6 +2,10 @@
   width: 100%;
 
   margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 
   font: {
     family: $main-font;
@@ -9,25 +13,67 @@
     weight: 900;
   }
 
+  &--first,
+  &--second,
+  &--third {
+    margin-bottom: 15px;
+  }
+
+  &__checkbox + label {
+    @include checkbox-default;
+
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__checkbox + label::before {
+    @include checkbox-custom;
+  }
+
+  &__checkbox:checked + label::after {
+    @include checkbox-checked;
+
+    outline: none;
+    cursor: pointer;
+  }
+
   color: $text-white;
 
-  &__label {
-    padding-left: 56px;
+  &__span {
+    margin-left: 18px;
   }
 
-  &__pic--nickelodeon {
+  &__span--nick {
+    display: block;
+
     width: 240px;
-    height: auto;
+    height: 34px;
+
+    background-image: url('../img/nick.svg');
+    background-repeat: no-repeat;
+    background-size: 240px 34px;
   }
 
-  &__pic--nickelodeonhd {
+  &__span--nickhd {
+    display: block;
+
     width: 267px;
-    height: auto;
+    height: 34px;
+
+    background-image: url('../img/nickhd.svg');
+    background-repeat: no-repeat;
+    background-size: 267px 34px;
   }
 
-  &__pic--nickjr {
+  &__span--nickjr {
+    display: block;
+
     width: 127px;
-    height: auto;
+    height: 34px;
+
+    background-image: url('../img/nickjr.svg');
+    background-repeat: no-repeat;
+    background-size: 127px 34px;
   }
 
   /* Инпут поиска города */
