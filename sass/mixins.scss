@@ -6,7 +6,7 @@
   padding: 0 15px;
   @media (min-width: $smartphones) {
     width: auto;
-    max-width: 100%;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -72,4 +72,51 @@
   height: 33px;
   background-image: url('../img/tick.svg');
   background-size: 33px 33px;
+}
+
+
+@mixin radio-default {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+
+  position: relative;
+
+  width: 72px;
+  height: 28px;
+  border: 2px solid #ffffff;
+  border-radius: 14px;
+}
+
+@mixin custom-radio {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: none;
+
+  border-radius: 50%;
+  background-color: #561786;
+
+}
+
+@mixin radio-checked {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+@mixin soft-animation {
+  transition-property: initial;
+  transition-duration: 0.2s;
+  transition-timing-function: initial;
+  transition-delay: initial;
 }

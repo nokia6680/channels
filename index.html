@@ -58,36 +58,149 @@
 								</label>
 							</li>
 							<!--Селект выбора страны-->
-							<li class="form-list__item form-item form-item--select">
-								<select class="form-item__select" size="1" name="country">
-									<option class="form-item__option">Россия</option>
-									<option class="form-item__option">Россия</option>
-									<option class="form-item__option">Россия</option>
-									<option class="form-item__option">Россия</option>
-									<option class="form-item__option">Россия</option>
-									<option class="form-item__option">Россия</option>
-								</select>
+							<li class="form-list__item form-item form-item--select select-item">
+								<!-- Лейбел, при клике на который открывается селект -->
+								<label for="select" class="select">
+								  <!-- Этот инпут отвечает за закрытие селекта при клике за его пределами. Также этот инпут является стандартным значением нашего селекта -->
+								  <input class="form-item__select" type="radio" name="list" value="not_changed" id="bg" checked />
+								  <!-- Этот инпут является переключателем селекта в состояние "открыт" -->
+								  <input class="form-item__select" type="radio" name="list" value="not_changed" id="select">
+								  <!-- Этот лейбел используется для создания подложки, клик по которой приводит к закрытию селекта -->
+								  <label class="bg" for="bg"></label>
+								  <!-- Этот див - список параметров селекта, где #text - то, что выводится, когда ничего не выбрано -->
+								  <div class="items">
+								    <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта -->
+								    <input class="form-item__select" type="radio" name="list" value="first_value" id="list[0]">
+								    <!-- Название параметра -->
+								    <label for="list[0]">Россия</label>
+								    <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+								    <input class="form-item__select" type="radio" name="list" value="second_value" id="list[1]">
+							     	<!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+							     	<label for="list[1]">Казахстан</label>
+										<!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+										<input class="form-item__select" type="radio" name="list" value="second_value" id="list[2]">
+										<!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+										<label for="list[2]">Литва</label>
+										<!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+										<input class="form-item__select" type="radio" name="list" value="second_value" id="list[3]">
+										<!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+										<label for="list[3]">Латвия</label>
+										<!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+										<input class="form-item__select" type="radio" name="list" value="second_value" id="list[4]">
+										<!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+										<label for="list[4]">Эстония</label>
+								    <!-- Текст селекта по умолчанию. Выводится тогда, когда ничего не выбрано -->
+								    <span id="text"></span>
+								  </div>
+								</label>
 							</li>
 							<!--Поле ввода города для поиска-->
 							<li class="form-list__item form-item form-item--search">
-								<input class="form-item__input" type="text" name="city" id="name" />
-								<ul class="form-item__results city-results">
-									<li class="city-results__item" id="city-1">
-										<a class="city-results__link" href="#">Город 1</a>
-									</li>
-									<li class="city-results__item" id="city-2">
-										<a class="city-results__link" href="#">Город 2</a>
-									</li>
-									<li class="city-results__item" id="city-3">
-										<a class="city-results__link" href="#">Город 3</a>
-									</li>
-									<li class="city-results__item" id="city-4">
-										<a class="city-results__link" href="#">Город 4</a>
-									</li>
-									<li class="city-results__item" id="city-5">
-										<a class="city-results__link" href="#">Город 5</a>
-									</li>
-								</ul>
+								<input class="form-item__input form-item__input--search" type="text" name="city" id="name" />
+								<button class="form-item__btn" type="button"><i class="fas fa-search"></i></button>
+								<div class="form-item__city">
+									<ul class="form-item__results city-results">
+										<li class="city-results__item" id="city-1">
+											<a class="city-results__link" href="#">Город 1</a>
+										</li>
+										<li class="city-results__item" id="city-2">
+											<a class="city-results__link" href="#">Город 2</a>
+										</li>
+										<li class="city-results__item" id="city-3">
+											<a class="city-results__link" href="#">Город 3</a>
+										</li>
+										<li class="city-results__item" id="city-4">
+											<a class="city-results__link" href="#">Город 4</a>
+										</li>
+										<li class="city-results__item" id="city-5">
+											<a class="city-results__link" href="#">Город 5</a>
+										</li>
+										<li class="city-results__item" id="city-6">
+											<a class="city-results__link" href="#">Город 6</a>
+										</li>
+										<li class="city-results__item" id="city-7">
+											<a class="city-results__link" href="#">Город 7</a>
+										</li>
+										<li class="city-results__item" id="city-8">
+											<a class="city-results__link" href="#">Город 8</a>
+										</li>
+										<li class="city-results__item" id="city-9">
+											<a class="city-results__link" href="#">Город 9</a>
+										</li>
+										<li class="city-results__item" id="city-10">
+											<a class="city-results__link" href="#">Город 10</a>
+										</li>
+										<li class="city-results__item" id="city-11">
+											<a class="city-results__link" href="#">Город 11</a>
+										</li>
+										<li class="city-results__item" id="city-1">
+											<a class="city-results__link" href="#">Город 1</a>
+										</li>
+										<li class="city-results__item" id="city-2">
+											<a class="city-results__link" href="#">Город 2</a>
+										</li>
+										<li class="city-results__item" id="city-3">
+											<a class="city-results__link" href="#">Город 3</a>
+										</li>
+										<li class="city-results__item" id="city-4">
+											<a class="city-results__link" href="#">Город 4</a>
+										</li>
+										<li class="city-results__item" id="city-5">
+											<a class="city-results__link" href="#">Город 5</a>
+										</li>
+										<li class="city-results__item" id="city-6">
+											<a class="city-results__link" href="#">Город 6</a>
+										</li>
+										<li class="city-results__item" id="city-7">
+											<a class="city-results__link" href="#">Город 7</a>
+										</li>
+										<li class="city-results__item" id="city-8">
+											<a class="city-results__link" href="#">Город 8</a>
+										</li>
+										<li class="city-results__item" id="city-9">
+											<a class="city-results__link" href="#">Город 9</a>
+										</li>
+										<li class="city-results__item" id="city-10">
+											<a class="city-results__link" href="#">Город 10</a>
+										</li>
+										<li class="city-results__item" id="city-11">
+											<a class="city-results__link" href="#">Город 11</a>
+										</li>
+										<li class="city-results__item" id="city-1">
+											<a class="city-results__link" href="#">Город 1</a>
+										</li>
+										<li class="city-results__item" id="city-2">
+											<a class="city-results__link" href="#">Город 2</a>
+										</li>
+										<li class="city-results__item" id="city-3">
+											<a class="city-results__link" href="#">Город 3</a>
+										</li>
+										<li class="city-results__item" id="city-4">
+											<a class="city-results__link" href="#">Город 4</a>
+										</li>
+										<li class="city-results__item" id="city-5">
+											<a class="city-results__link" href="#">Город 5</a>
+										</li>
+										<li class="city-results__item" id="city-6">
+											<a class="city-results__link" href="#">Город 6</a>
+										</li>
+										<li class="city-results__item" id="city-7">
+											<a class="city-results__link" href="#">Город 7</a>
+										</li>
+										<li class="city-results__item" id="city-8">
+											<a class="city-results__link" href="#">Город 8</a>
+										</li>
+										<li class="city-results__item" id="city-9">
+											<a class="city-results__link" href="#">Город 9</a>
+										</li>
+										<li class="city-results__item" id="city-10">
+											<a class="city-results__link" href="#">Город 10</a>
+										</li>
+										<li class="city-results__item" id="city-11">
+											<a class="city-results__link" href="#">Город 11</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</form>
@@ -96,16 +209,21 @@
 				<section class="main__source main-source">
 					<h2 class="visually-hidden main-source__title">На чем планируется просмотр?</h2>
 					<!--Переключатель слайдеров, только для мобильной и планшетной версий-->
-					<ul class="nav-language__list language-list">
-						<li class="language-list__item">
-							<input class="visually-hidden language-list__input language-list__input--radio" type="radio" name="type" value="hometv" id="hometv" checked>
-							<label class="language-list__label language-list__label--hometv" for="hometv">Домашнее ТВ</label>
-						</li>
-						<li class="language-list__item">
-							<input class="visually-hidden language-list__input language-list__input--radio" type="radio" name="type" value="homepc" id="homepc">
-							<label class="language-list__label language-list__label--homepc" for="homepc">Компьютер</label>
-						</li>
-					</ul>
+					<div class="main-source__controls main-controls">
+						<button class="main-controls__btn main-controls__btn--tv" type="button">
+							<span class="main-controls__text main-controls__text--tv">Домашнее тв</span>
+						</button>
+						<div class="button-cover">
+							<div class="button r" id="button-1">
+								<input type="checkbox" class="checkbox">
+								<div class="knobs"></div>
+								<div class="layer"></div>
+							</div>
+						</div>
+						<button class="main-controls__btn main-controls__btn--pc" type="button">
+							<span class="main-controls__text main-controls__text--pc">Компьютер</span>
+						</button>
+					</div>
 					<ul class="main-source__list source-list">
 						<!--Просмотр на домашнем тв-->
 						<li class="source-list__item source-item source-item--hometv">
@@ -228,6 +346,7 @@
 			</main>
 			<!--Подвал страницы-->
 			<footer class="footer">
+				<p class="footer__copyright">&copy; 2018 Viacom. Все права защищены.</p>
 				<!--Соцсети-->
 				<ul class="footer-links__social footer-social">
 					<li class="footer-social__item social-item social-item--vk">

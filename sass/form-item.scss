@@ -30,55 +30,44 @@
     height: auto;
   }
 
-  &__select {
-    width: 100%;
-
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 5px solid #ffffff;
-
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-    /*for WebKit*/
-   -webkit-appearance: none;
-   /* for FF */
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    /* for IE */
-    -ms-appearance: none;
-    appearance: none!important;
-
-    font: {
-      family: $main-font;
-      size: 1.5em;
-      weight: 900;
-    }
-
-    color: $text-white;
-    line-height: 1;
-    text-transform: uppercase;
-  }
-
-  &__select::-ms-expand {
-    display: none;
-  }
+  /* Инпут поиска города */
 
   &--search {
+    position: relative;
+  }
 
+  &__city {
+    position: relative;
+    display: none;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 5px;
+      height: 205px;
+
+      top: 0;
+      right: 22px;
+
+      background-color: #fff;
+    }
   }
 
   &__input {
     width: 100%;
 
     border: 5px solid #ffffff;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
 
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+
+    padding-right: 40px;
+
+    position: relative;
+
     font: {
       family: $main-font;
       size: 1.5em;
@@ -88,5 +77,229 @@
     color: $text-white;
     line-height: 1;
     text-transform: uppercase;
+
+    cursor: text;
+    outline: none;
+  }
+
+  &__btn {
+    position: absolute;
+
+    top: 5px;
+    right: 5px;
+
+    width: 43px;
+    height: 43px;
+
+    background-color: transparent;
+    border: none;
+  }
+
+  .fa-search {
+    position: absolute;
+    content: '\f002';
+
+    width: 33px;
+    height: 33px;
+
+    font-size: 1.675em;
+
+    color: $text-white;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  /* скрываем все инпуты, чтобы все выглядело красиво */
+  &__select {
+    display: none;
+  }
+
+  /* Задаем параметры нашего селекта - ширину, высоту и line-height(для центрирования текста по вертикали;этот парметр меньше ширины на 4px, т.к. в нашем блоке есть border размером в 2px со всех сторон) */
+
+  .select {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 392px;
+    height: 53px;
+
+    line-height: 1;
+    position: relative;
+
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border: 5px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    font: {
+      family: $main-font;
+      size: 1.5em;
+      weight: 900;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+
+    z-index: 100;
+  }
+
+  /* Кастомизация стрелки */
+
+  .select:before {
+    content: "";
+    display: inline-block;
+    background-color: white;
+    background-image: url('../img/arrow-down.svg');
+    background-size: 30px 22px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    width: 47px;
+    height: 47px;
+    text-align: center;
+
+    border: none;
+    cursor: pointer;
+  }
+
+  /* */
+
+  .select input[name="list"]:not(:checked) ~ #text {
+    color: #fff;
+    background: transparent;
+    padding-left: 10px;
+  }
+
+  /* */
+
+  .select input[name="list"]:checked ~ #text {
+    background: transparent;
+    color: transparent;
+    z-index: 2;
+    padding-left: 10px;
+  }
+
+  /* Стилизация выключенного селекта */
+
+  #select:disabled ~ .items #text {
+    background: transparent;
+  }
+
+  /* Стилизация блока с опциями. min-height сделана для фикса высоты при абсолютном позиционировании, overflow же сделан для фиксированной высоты(см. ниже) */
+
+  .items {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 392px;
+    cursor: pointer;
+
+    left: -5px;
+
+    z-index: 1;
+  }
+
+  /* стилизуем стандартный текст лейбела(желательно смотреть этот стиль после .items) */
+
+  #text {
+    position: absolute;
+    display: block;
+    top: 0;
+
+    padding-left: 10px;
+
+    font: {
+      family: $main-font;
+      size: 1em;
+      weight: 900;
+    }
+
+    color: #fff;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  /* Если наш селект закрыт, то он имеет высоту 30px(сделано для того, чтобы слишком большие надписи не растягивали его в высоту)  */
+
+  #select:not(:checked) ~ .items {
+    height: 53px;
+  }
+
+  /* Все лейбелы(названия опций) изначально скрыты */
+
+  .items label {
+    border: none;
+    display: none;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: rgba(255, 255, 255, 0.8);
+
+    font: {
+      family: $main-font;
+      size: 1em;
+      weight: 900;
+    }
+
+    color: #561786;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  /* Тут много объяснять не надо - просто выделение при наведении */
+
+  .items label:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+
+  /* Опять же фикс из-за абсолютного позиционирования */
+
+  #select:checked ~ .items {
+    padding-top: 43px;
+
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+  }
+
+  /* Если наш селект открыт, то надо сделать все опции видимыми */
+
+  #select:checked ~ .items label {
+    display: block;
+  }
+
+  /* Если какая-либо опция была выбрана, то сделать ее видимой(при выборе селект автоматически закроется) */
+
+  .items input:checked + label {
+    display: block!important;
+    border: none;
+    background: transparent;
+    color: #fff;
+
+    padding-left: 15px;
+    padding-top: 0;
+  }
+
+  /* При открытии селекта создать подложку во весь экран, при клике на которую селект закроется, а значение останется пустым. background сделан для наглядности */
+
+  #select:checked ~ .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
   }
 }

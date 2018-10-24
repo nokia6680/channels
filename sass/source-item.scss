@@ -1,0 +1,19 @@
+.source-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+
+  &__title {
+    display: none;
+  }
+
+  &--hometv {
+    display: none;
+  }
+}
