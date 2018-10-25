@@ -1,8 +1,9 @@
 $(document).ready(function(){
   $('.source-slider__first').slick({
     infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: true,
     arrows: true,
     prevArrow: '<div class="prev-1"></div>',
     nextArrow: '<div class="next-1"></div>',
@@ -63,8 +64,9 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.source-slider__second').slick({
     infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: true,
     arrows: true,
     prevArrow: '<div class="prev-2"></div>',
     nextArrow: '<div class="next-2"></div>',

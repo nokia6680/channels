@@ -29,10 +29,21 @@
   .header-nav {
     justify-content: flex-start;
     padding-left: 4.68%;
-    
+
     &__logo {
       width: 170px;
       height: 24px;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .header-nav {
+    padding-left: 4.79%;
+
+    &__logo {
+      width: 240px;
+      height: 34px;
     }
   }
 }

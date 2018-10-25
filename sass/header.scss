@@ -24,3 +24,10 @@
     padding-bottom: 15px;
   }
 }
+
+@media (min-width: $hd) {
+  .header {
+    padding-top: 14px;
+    padding-bottom: 21px;
+  }
+}

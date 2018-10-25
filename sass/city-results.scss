@@ -16,7 +16,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
 
   &::-webkit-scrollbar {
     width: 17px;
@@ -104,6 +104,28 @@
     &__link {
       font: {
         size: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .city-results {
+    width: 389px;
+    height: 212px;
+
+    &::-webkit-scrollbar {
+      width: 16px;
+    }
+
+    &__item {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+
+    &__link {
+      font: {
+        size: 1.675em;
       }
     }
   }

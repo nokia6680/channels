@@ -22,3 +22,11 @@
     width: 683px;
   }
 }
+
+@media (min-width: $hd) {
+  .main {
+    padding-top: 14px;
+
+    width: 1004px;
+  }
+}

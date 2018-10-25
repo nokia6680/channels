@@ -68,3 +68,41 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media (min-width: $hd) {
+  .social-item {
+    border-radius: 19.5px;
+    width: 39px;
+    height: 39px;
+
+    .fa-facebook-f::before {
+      position: absolute;
+      content: '\f39e';
+      font-size: 1.675em;
+    }
+
+    .fa-vk::before {
+      position: absolute;
+      content: '\f189';
+      font-size: 1.675em;
+    }
+
+    .fa-twitter::before {
+      position: absolute;
+      content: '\f099';
+      font-size: 1.675em;
+    }
+
+    .fa-instagram::before {
+      position: absolute;
+      content: '\f16d';
+      font-size: 1.675em;
+    }
+
+    .fa-odnoklassniki::before {
+      position: absolute;
+      content: '\f263';
+      font-size: 1.675em;
+    }
+  }
+}

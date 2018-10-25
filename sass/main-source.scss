@@ -125,3 +125,9 @@
     }
   }
 }
+
+@media (min-width: $hd) {
+  .main-source {
+    padding-top: 12px;
+  }
+}

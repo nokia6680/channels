@@ -61,6 +61,10 @@
   @media (min-width: $laptop) {
     padding-left: 32px;
   }
+
+  @media (min-width: $hd) {
+    padding-left: 45px;
+  }
 }
 
 @mixin checkbox-custom {
@@ -79,11 +83,18 @@
   @media (min-width: $tablets) {
     width: 54px;
     height: 54px;
+
+    border: 5px solid #ffffff;
   }
 
   @media (min-width: $laptop) {
     width: 32px;
     height: 32px;
+  }
+
+  @media (min-width: $hd) {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -118,6 +129,16 @@
 
     top: 4px;
     left: 5px;
+  }
+
+  @media (min-width: $hd) {
+    width: 33px;
+    height: 33px;
+
+    background-size: 33px 33px;
+
+    top: 5px;
+    left: 6px;
   }
 }
 

@@ -21,3 +21,9 @@
     position: relative;
   }
 }
+
+@media (min-width: $hd) {
+  .footer-social {
+    width: 295px;
+  }
+}
