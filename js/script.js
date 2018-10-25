@@ -51,9 +51,7 @@ $(document).ready(function(){
           slidesToScroll: 1,
           infinite: false,
           dots: true,
-          arrows: true,
-          prevArrow: '<div class="prev-1"></div>',
-          nextArrow: '<div class="next-1"></div>'
+          arrows: false
         }
       }
     ]
@@ -114,9 +112,7 @@ $(document).ready(function(){
           slidesToScroll: 1,
           infinite: false,
           dots: true,
-          arrows: true,
-          prevArrow: '<div class="prev-2"></div>',
-          nextArrow: '<div class="next-2"></div>'
+          arrows: false
         }
       }
     ]

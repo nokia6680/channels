@@ -6,10 +6,10 @@
 
   width: 100%;
 
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   &__btn {
     background-color: transparent;
@@ -20,7 +20,7 @@
 
   &__text {
     font: {
-      size: 1.188em;
+      size: 0.725em;
       weight: 900;
       family: $main-font;
     }
@@ -33,6 +33,22 @@
       color: $text-purple;
     }
   }
+}
+
+@media (min-width: $smartphones) {
+  .main-controls {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-bottom: 20px;
+
+    &__text {
+      font: {
+        size: 1.188em;
+      }
+    }
+  }
+
 }
 
 @media (min-width: $tablets) {

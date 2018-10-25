@@ -1,11 +1,17 @@
 .header {
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 
   background-color: $header-bg;
 }
 
+@media (min-width: $smartphones) {
+  .header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 @media (min-width: $tablets) {
   .header {

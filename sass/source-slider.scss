@@ -3,17 +3,17 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 370px;
+  width: 280px;
 
   flex-wrap: nowrap;
 
   &__channel {
-    min-width: 112px;
-    max-width: 112px;
-    height: 112px;
+    min-width: 80px;
+    max-width: 80px;
+    height: 80px;
 
     &:first-of-type {
-      margin-left: 6px;
+      margin-left: 3px;
     }
 
     &:nth-of-type(3n) {
@@ -31,106 +31,22 @@
     opacity: 0.5 !important;
   }
 
-  .prev-1 {
-    position: absolute;
-    top: 20%;
-    left: -7.5%;
-
-    background-image: url('../img/arrow-left.svg');
-    background-repeat: no-repeat;
-    background-size: 26px 41px;
-
-    width: 26px;
-    height: 41px;
-
-    background-color: transparent;
-    border: 0;
-
-    z-index: 100;
-
-    cursor: pointer;
-    outline: none;
-  }
-
-  .next-1 {
-    position: absolute;
-    top: 20%;
-    right: -7.5%;
-
-    background-image: url('../img/arrow-right.svg');
-    background-repeat: no-repeat;
-    background-size: 26px 41px;
-
-    width: 26px;
-    height: 41px;
-
-    background-color: transparent;
-    border: 0;
-
-    z-index: 100;
-
-    cursor: pointer;
-    outline: none;
-  }
-
-  .prev-2 {
-    position: absolute;
-    top: 20%;
-    left: -7.5%;
-
-    background-image: url('../img/arrow-left.svg');
-    background-repeat: no-repeat;
-    background-size: 26px 41px;
-
-    width: 26px;
-    height: 41px;
-
-    background-color: transparent;
-    border: 0;
-
-    z-index: 100;
-
-    cursor: pointer;
-    outline: none;
-  }
-
-  .next-2 {
-    position: absolute;
-    top: 20%;
-    right: -7.5%;
-
-    background-image: url('../img/arrow-right.svg');
-    background-repeat: no-repeat;
-    background-size: 26px 41px;
-
-    width: 26px;
-    height: 41px;
-
-    background-color: transparent;
-    border: 0;
-
-    z-index: 100;
-
-    cursor: pointer;
-    outline: none;
-  }
-
   .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 23px 0 23px 0;
+    padding: 10px 0 10px 0;
     list-style-type: none;
 
     li {
-      margin: 0 0.25rem;
+      margin: 0 0.2rem;
     }
 
     button {
       display: block;
-      width: 16px;
-      height: 16px;
+      width: 8px;
+      height: 8px;
       padding: 0;
       border: none;
       border-radius: 100%;
@@ -144,8 +60,8 @@
     li.slick-active button {
       background-color: transparent;
       position: relative;
-      width: 16px;
-      height: 16px;
+      width: 8px;
+      height: 8px;
       background-color: #ffffff;
 
       cursor: pointer;
@@ -155,8 +71,8 @@
         position: absolute;
         content: '';
 
-        width: 25px;
-        height: 25px;
+        width: 16px;
+        height: 16px;
 
         border: 2px solid #ffffff;
 
@@ -167,6 +83,130 @@
 
         background-color: transparent;
         border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: $smartphones) {
+  .source-slider {
+    width: 370px;
+
+    &__channel {
+      min-width: 112px;
+      max-width: 112px;
+      height: 112px;
+
+      &:first-of-type {
+        margin-left: 6px;
+      }
+    }
+
+    .prev-1 {
+      position: absolute;
+      top: 20%;
+      left: -7.5%;
+
+      background-image: url('../img/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: 26px 41px;
+
+      width: 26px;
+      height: 41px;
+
+      background-color: transparent;
+      border: 0;
+
+      z-index: 100;
+
+      cursor: pointer;
+      outline: none;
+    }
+
+    .next-1 {
+      position: absolute;
+      top: 20%;
+      right: -7.5%;
+
+      background-image: url('../img/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: 26px 41px;
+
+      width: 26px;
+      height: 41px;
+
+      background-color: transparent;
+      border: 0;
+
+      z-index: 100;
+
+      cursor: pointer;
+      outline: none;
+    }
+
+    .prev-2 {
+      position: absolute;
+      top: 20%;
+      left: -7.5%;
+
+      background-image: url('../img/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: 26px 41px;
+
+      width: 26px;
+      height: 41px;
+
+      background-color: transparent;
+      border: 0;
+
+      z-index: 100;
+
+      cursor: pointer;
+      outline: none;
+    }
+
+    .next-2 {
+      position: absolute;
+      top: 20%;
+      right: -7.5%;
+
+      background-image: url('../img/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: 26px 41px;
+
+      width: 26px;
+      height: 41px;
+
+      background-color: transparent;
+      border: 0;
+
+      z-index: 100;
+
+      cursor: pointer;
+      outline: none;
+    }
+
+
+    .slick-dots {
+      padding: 23px 0 23px 0;
+
+      li {
+        margin: 0 0.25rem;
+      }
+
+      button {
+        width: 16px;
+        height: 16px;
+      }
+
+      li.slick-active button {
+        width: 16px;
+        height: 16px;
+
+        &::before {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }

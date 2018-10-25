@@ -9,7 +9,7 @@
 
   font: {
     family: $main-font;
-    size: 1.25em;
+    size: 1em;
     weight: 900;
   }
 
@@ -40,40 +40,41 @@
   color: $text-white;
 
   &__span {
-    margin-left: 18px;
+    margin-left: 12px;
   }
 
   &__span--nick {
     display: block;
 
-    width: 240px;
-    height: 34px;
+    width: 163px;
+    height: 23px;
 
+    background-size: 163px 23px;
     background-image: url('../img/nick.svg');
     background-repeat: no-repeat;
-    background-size: 240px 34px;
+
   }
 
   &__span--nickhd {
     display: block;
 
-    width: 267px;
-    height: 34px;
+    width: 182px;
+    height: 23px;
 
+    background-size: 182px 23px;
     background-image: url('../img/nickhd.svg');
     background-repeat: no-repeat;
-    background-size: 267px 34px;
   }
 
   &__span--nickjr {
     display: block;
 
-    width: 127px;
-    height: 34px;
+    width: 86px;
+    height: 23px;
 
+    background-size: 86px 23px;
     background-image: url('../img/nickjr.svg');
     background-repeat: no-repeat;
-    background-size: 127px 34px;
   }
 
   /* Инпут поиска города */
@@ -86,10 +87,10 @@
     position: absolute;
     display: none;
 
-    top: 53px;
+    top: 35px;
     left: 0;
 
-    width: 392px;
+    width: 280px;
 
     z-index: 1000;
 
@@ -98,7 +99,7 @@
       content: '';
 
       width: 5px;
-      height: 205px;
+      height: 143px;
 
       top: 0;
       right: 22px;
@@ -123,7 +124,7 @@
 
     font: {
       family: $main-font;
-      size: 1.5em;
+      size: 1em;
       weight: 900;
     }
 
@@ -138,11 +139,11 @@
   &__btn {
     position: absolute;
 
-    top: 5px;
-    right: 5px;
+    top: 1px;
+    right: 1px;
 
-    width: 43px;
-    height: 43px;
+    width: 35px;
+    height: 35px;
 
     background-color: transparent;
     border: none;
@@ -155,10 +156,10 @@
     position: absolute;
     content: '\f002';
 
-    width: 33px;
-    height: 33px;
+    width: 22px;
+    height: 22px;
 
-    font-size: 1.675em;
+    font-size: 1em;
 
     color: $text-white;
 
@@ -181,14 +182,14 @@
     justify-content: flex-start;
     align-items: flex-start;
 
-    width: 392px;
-    height: 53px;
+    width: 280px;
+    height: 35px;
 
     line-height: 1;
     position: relative;
 
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-bottom: 5px;
 
     border: 5px solid #ffffff;
@@ -196,7 +197,7 @@
 
     font: {
       family: $main-font;
-      size: 1.5em;
+      size: 1.25em;
       weight: 900;
     }
 
@@ -214,15 +215,15 @@
     display: inline-block;
     background-color: white;
     background-image: url('../img/arrow-down.svg');
-    background-size: 30px 22px;
+    background-size: 21px 15px;
     background-repeat: no-repeat;
     background-position: center center;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: -1px;
+    top: -1px;
     z-index: 2;
-    width: 47px;
-    height: 47px;
+    width: 30px;
+    height: 30px;
     text-align: center;
 
     border: none;
@@ -258,7 +259,7 @@
     display: block;
     position: absolute;
     overflow: hidden;
-    width: 392px;
+    width: 280px;
     cursor: pointer;
 
     left: -5px;
@@ -289,7 +290,7 @@
   /* Если наш селект закрыт, то он имеет высоту 30px(сделано для того, чтобы слишком большие надписи не растягивали его в высоту)  */
 
   #select:not(:checked) ~ .items {
-    height: 53px;
+    height: 35px;
   }
 
   /* Все лейбелы(названия опций) изначально скрыты */
@@ -323,7 +324,7 @@
   /* Опять же фикс из-за абсолютного позиционирования */
 
   #select:checked ~ .items {
-    padding-top: 43px;
+    padding-top: 24px;
 
     border-left: 5px solid #fff;
     border-right: 5px solid #fff;
@@ -357,6 +358,161 @@
     bottom: 0;
     right: 0;
     z-index: 0;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .form-item {
+    margin-bottom: 12px;
+
+    font: {
+      size: 1.25em;
+    }
+
+    &--first,
+    &--second,
+    &--third {
+      margin-bottom: 15px;
+    }
+
+    &__span {
+      margin-left: 18px;
+    }
+
+    &__span--nick {
+      width: 240px;
+      height: 34px;
+
+      background-size: 240px 34px;
+    }
+
+    &__span--nickhd {
+      width: 267px;
+      height: 34px;
+
+      background-size: 267px 34px;
+    }
+
+    &__span--nickjr {
+      width: 127px;
+      height: 34px;
+
+      background-size: 127px 34px;
+    }
+
+    &__city {
+      top: 53px;
+      left: 0;
+
+      width: 392px;
+
+      z-index: 1000;
+
+      &::after {
+        width: 5px;
+        height: 205px;
+
+        top: 0;
+        right: 22px;
+      }
+    }
+
+    &__input {
+      padding-left: 10px;
+      padding-top: 4px;
+      padding-bottom: 3px;
+
+      padding-right: 40px;
+
+      font: {
+        size: 1.5em;
+      }
+    }
+
+    &__btn {
+      top: 5px;
+      right: 5px;
+
+      width: 43px;
+      height: 43px;
+    }
+
+    .fa-search {
+      width: 33px;
+      height: 33px;
+
+      font-size: 1.675em;
+    }
+
+    .select {
+      width: 392px;
+      height: 53px;
+
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      font: {
+        size: 1.5em;
+      }
+    }
+
+    .select:before {
+      background-size: 30px 22px;
+      width: 47px;
+      height: 47px;
+    }
+
+    .select input[name="list"]:not(:checked) ~ #text {
+      padding-left: 10px;
+    }
+
+    .select input[name="list"]:checked ~ #text {
+      padding-left: 10px;
+    }
+
+    .items {
+      width: 392px;
+
+      left: -5px;
+    }
+
+    #text {
+      top: 0;
+
+      padding-left: 10px;
+
+      font: {
+        size: 1em;
+      }
+    }
+
+    #select:not(:checked) ~ .items {
+      height: 53px;
+    }
+
+    .items label {
+      padding-left: 10px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+
+      font: {
+        size: 1em;
+      }
+    }
+
+    #select:checked ~ .items {
+      padding-top: 43px;
+
+      border-left: 5px solid #fff;
+      border-right: 5px solid #fff;
+      border-bottom: 5px solid #fff;
+    }
+
+    .items input:checked + label {
+      padding-left: 15px;
+      padding-top: 0;
+    }
   }
 }
 
