@@ -31,6 +31,48 @@
     opacity: 0.5 !important;
   }
 
+  .prev-1 {
+    position: absolute;
+    top: 20%;
+    left: -7.5%;
+
+    background-image: url('../img/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-size: 26px 41px;
+
+    width: 26px;
+    height: 41px;
+
+    background-color: transparent;
+    border: 0;
+
+    z-index: 100;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  .next-1 {
+    position: absolute;
+    top: 20%;
+    right: -7.5%;
+
+    background-image: url('../img/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: 26px 41px;
+
+    width: 26px;
+    height: 41px;
+
+    background-color: transparent;
+    border: 0;
+
+    z-index: 100;
+
+    cursor: pointer;
+    outline: none;
+  }
+
   .prev-2 {
     position: absolute;
     top: 20%;
@@ -143,6 +185,28 @@
         margin-left: 6px;
       }
     }
+    .prev-1 {
+      top: 24%;
+      left: -7.5%;
+
+      background-size: 38px 59px;
+
+      width: 38px;
+      height: 59px;
+    }
+
+    .next-1 {
+      top: 24%;
+      right: -7.5%;
+
+      background-size: 38px 59px;
+
+      width: 38px;
+      height: 59px;
+
+      cursor: pointer;
+      outline: none;
+    }
 
     .prev-2 {
       top: 24%;
@@ -185,6 +249,93 @@
         &::before {
           width: 39px;
           height: 39px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .source-slider {
+    width: 571px;
+
+    margin-bottom: 5px;
+
+    &__channel {
+      min-width: 101px;
+      max-width: 101px;
+      height: 102px;
+
+      box-shadow:0px 0px 10px 0px rgba(0,0,0,0.15);
+      -webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.15);
+      -moz-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.15);
+
+      &:first-of-type {
+        margin-left: 6px;
+      }
+
+      &:nth-of-type(5n) {
+        margin-right: 0;
+      }
+    }
+    .prev-1 {
+      top: 24%;
+      left: -7.5%;
+
+      background-size: 27px 42px;
+
+      width: 27px;
+      height: 42px;
+    }
+
+    .next-1 {
+      top: 24%;
+      right: -7.5%;
+
+      background-size: 27px 42px;
+
+      width: 27px;
+      height: 42px;
+    }
+
+    .prev-2 {
+      top: 24%;
+      left: -7.5%;
+
+      background-size: 27px 42px;
+
+      width: 27px;
+      height: 42px;
+    }
+
+    .next-2 {
+      top: 24%;
+      right: -7.5%;
+
+      background-size: 27px 42px;
+
+      width: 27px;
+      height: 42px;
+    }
+
+    .slick-dots {
+      padding: 10px 0 10px 0;
+      button {
+        width: 10px;
+        height: 10px;
+      }
+
+      li {
+        margin: 0 0.25rem;
+      }
+
+      li.slick-active button {
+        width: 10px;
+        height: 10px;
+
+        &::before {
+          width: 20px;
+          height: 20px;
         }
       }
     }

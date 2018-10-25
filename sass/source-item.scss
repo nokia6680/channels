@@ -19,3 +19,27 @@
     display: none;
   }
 }
+
+@media (min-width: $laptop) {
+  .source-item {
+    &__title {
+      display: block;
+
+      font: {
+        size: 2em;
+        weight: 900;
+        family: $main-font;
+      }
+
+      color: $text-orange;
+      line-height: 1;
+
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    &--hometv {
+      display: flex;
+    }
+  }
+}

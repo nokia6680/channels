@@ -10,8 +10,8 @@ $(document).ready(function(){
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 5,
+          slidesToScroll: 1,
           infinite: false,
           dots: true,
           arrows: true,
@@ -72,8 +72,8 @@ $(document).ready(function(){
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 5,
+          slidesToScroll: 1,
           infinite: false,
           dots: true,
           arrows: true,

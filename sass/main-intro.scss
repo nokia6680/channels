@@ -7,6 +7,10 @@
   width: 100%;
 
   &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font: {
       family: $main-font;
       size: 3.125em;
@@ -30,16 +34,76 @@
     -webkit-box-shadow:0px 2px 2px 0px rgba(35,31,32,0.2);
     -moz-box-shadow:0px 2px 2px 0px rgba(35,31,32,0.2);
   }
+
+  &__where {
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: $tablets) {
   .main-intro {
     margin-bottom: 38px;
 
+    box-shadow:0px 0px 18px 0px rgba(0,0,0,0.26);
+    -webkit-box-shadow:0px 0px 18px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow:0px 0px 18px 0px rgba(0,0,0,0.26);
+
     &__title {
       font: {
         size: 4.5em;
       }
+
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+    }
+
+    &__where {
+      margin-right: 14px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .main-intro {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 15px;
+    padding: 0;
+
+    box-shadow:0px 0px 18px 0px rgba(0,0,0,0.26);
+    -webkit-box-shadow:0px 0px 18px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow:0px 0px 18px 0px rgba(0,0,0,0.26);
+
+    &__title {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      font: {
+        size: 3em;
+      }
+
+      width: 343px;
+
+      text-align: center;
+    }
+
+    &__where {
+      font: {
+        size: 2.5em;
+      }
+      line-height: 1;
+      margin-right: 0;
+      margin-top: 20px;
+
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    &__watch {
+      letter-spacing: -1.9px;
     }
   }
 }

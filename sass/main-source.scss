@@ -86,6 +86,10 @@
   .main-source {
     padding-top: 30px;
 
+    box-shadow:0px 0px 18px 0px rgba(0,0,0,0.26);
+    -webkit-box-shadow:0px 0px 18px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow:0px 0px 18px 0px rgba(0,0,0,0.26);
+
     .button-cover {
       width: 108px;
       height: 45px;
@@ -107,6 +111,17 @@
 
     #button-1 .checkbox:checked + .knobs:before {
       left: 64px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .main-source {
+    width: 100%;
+    padding-top: 12px;
+
+    .button-cover {
+      display: none;
     }
   }
 }

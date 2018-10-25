@@ -50,3 +50,9 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .main-controls {
+    display: none;
+  }
+}

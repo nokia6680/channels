@@ -21,7 +21,7 @@
       family: $thin-font;
     }
 
-    color: $text-white;
+    color: rgba(255, 255, 255, 0.5);
     line-height: 1;
   }
 }
@@ -33,6 +33,27 @@
     &__copyright {
       font: {
         size: 0.625em;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .footer {
+    justify-content: flex-end;
+
+    height: 41px;
+
+    position: relative;
+
+    &__copyright {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font: {
+        size: 0.5em;
       }
     }
   }

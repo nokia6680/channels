@@ -14,3 +14,10 @@
     padding-bottom: 7px;
   }
 }
+
+@media (min-width: $laptop) {
+  .main-form {
+    width: 340px;
+    padding-bottom: 0;
+  }
+}

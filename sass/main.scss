@@ -14,3 +14,11 @@
     width: 650px;
   }
 }
+
+@media (min-width: $laptop) {
+  .main {
+    padding-top: 27px;
+
+    width: 683px;
+  }
+}

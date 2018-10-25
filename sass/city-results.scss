@@ -86,3 +86,25 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .city-results {
+    width: 267px;
+    height: 143px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &__item {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+
+    &__link {
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
